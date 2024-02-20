@@ -1,0 +1,41 @@
+Tasks to solve in this exercise
+1. Open your workflow “Exercise_4”
+
+
+2. Sales Data Input:
+Input the 3 sales data files and use the UNION tool to union the data.
+
+
+3. Converting Dates: 
+Use the DateTime tool to convert the Date field using the appropriate format.
+Afterwards run the workflow to see the results.
+Hint: This will cause some conversion errros!
+
+4. Converting Dates Trouble Shooting:
+Use the Filter tool to filter the records that could not be converted (nulls).
+Remember the different date format in these records!
+You can verify your assumption on the date format by having a look at the initial 
+Excel file (this is where some dates are in a different format).
+
+5. Converting remaining Dates:
+Use again the filter tool to create another additional column converting the dates 
+with using the alternative date format.
+Hint: You have to use a custom date!
+
+6. Merge the two new date columns into one:
+Use the Formula tool and an IF-statement to merge the two fields into a new 
+complete data field.
+Hint: Start the formula using IF [DateTime_Out] = Null() … (Syntax: IF c THEN t ELSE f ENDIF)
+
+7. Unselect and rename fields and change data types:
+Use the Select tool to unselect the three not necessary date fields and rename the last and 
+correct date field to “Date”. Change the data type of that field to Date.
+
+8. Use the Auto-Field tool:
+Use the Auto-Field tool to make sure all fields are in the correct data type.
+
+9. Join the two data streams using the Date & Store fields:
+Use the Join Tool to join the data stream of the end of the Features data stream with 
+the end of the sales_store data stream.
+
+10. Save your workflow as “Exercise_5”
